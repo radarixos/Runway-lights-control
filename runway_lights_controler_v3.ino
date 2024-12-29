@@ -15,13 +15,12 @@
 // HHH - 15min (default, all jumps OPEN)
 // 
 // developed for buddies from Kociciny airstripe.
+// based on Arduino NANO modul and relay board.
 
 
 // Definice pinů
 const int vstupniPin = 2; // Pin pro vstup pulzů
-//const int vystupniPin = 13; // Pin pro výstup
 const int relePin = 4; // Pin pro ovládání relé
-//const int ledVystupPin = 13; // LED na desce kopíruje stav výstupu
 const int ledVstupPin = 3; // Externí LED kopíruje stav vstupu
 const int externiLedVystupPin = 5; // Další externí LED kopíruje stav výstupu
 const int pinCas1 = 10; // Pin pro časovou konfiguraci 1
