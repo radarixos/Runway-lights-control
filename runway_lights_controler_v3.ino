@@ -4,10 +4,14 @@
 // non-commercial use only, (cc)OK1VBR
 //
 // usecase:
-// if pilot three times click to PTT (like as morse S)
-// runway lights for approach and landing turn ON.
-// signal is injected from airman radio.
-// table for times:
+// if pilot three times click to PTT (like as morse S):
+// runway lights for approach and landing turn ON,
+// and wait next three clicks for OFF the lights, 
+// or timeout limit (for auto OFF the lights).
+// Lights are connected via relay on MCU digi output RelayPin.
+// Signal is injected to MCU input digi pin, from RX LED in airman-vhf radio via optocoupler.
+//
+// Table for time limit:
 // LHH - 15sec (D10 to GND, D11 and D12 PULLUP)
 // HLH - 1min  (D10 PULLUP, D11 to GND, D12 PULLUP)
 // LLH - 5min  (D10 and D11 to GND, D12 PULLUP)
